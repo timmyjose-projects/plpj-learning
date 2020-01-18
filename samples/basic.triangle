@@ -1,0 +1,9 @@
+! This is a comment that extends to the end of the line
+let 
+  const n ~ 100
+  var m : Integer
+in
+  begin
+    m := n * n
+    m := m - 100
+  end

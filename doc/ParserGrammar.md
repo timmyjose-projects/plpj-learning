@@ -10,9 +10,10 @@
                     | while Expression do single-Command
                     | let Declaration in single-Command
                     | begin Command end
+
   Expression ::= primary-Expression (Operator primary-Expression)*
 
-  primary-Expression ::= Integer-Literal
+  primary-Expression ::= IntegerLiteral
                       | Identifier
                       | Operator primary-Expression
                       | ( Expression )

@@ -5,10 +5,13 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Token {
-  String spelling;
-  Kind kind;
+  public String spelling;
+  public Kind kind;
+  public int line;
+  public int column;
+  public String filename;
 
-  public Token(final String spelling, final Token.Kind kind) {
+  public Token(final String spelling, final Token.Kind kind, int line, int column, String filename) {
     this.spelling = spelling;
 
     if (Token.isKeyword(spelling)) {
@@ -16,9 +19,12 @@ public class Token {
     } else {
       this.kind = kind;
     }
+    this.filename = filename;
+    this.line = line;
+    this.column = column;
   }
 
-  enum Kind {
+  public enum Kind {
     IDENTIFIER("<identifier>"),
     INTEGERLITERAL("<integer-literal>"),
     LET("<let>"),

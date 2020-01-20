@@ -1,11 +1,13 @@
 package com.tzj.minitriangle.ast;
 
 public class IfCommand extends Command {
-  Identifier I;
   Expression E;
+  Command C1;
+  Command C2;
 
-  public IfCommand(final Identifier I, final Expression E) {
-    this.I = I;
+  public IfCommand(final Expression E, final Command C1, final Command C2) {
     this.E = E;
+    this.C1 = C1;
+    this.C2 = C2;
   }
 }

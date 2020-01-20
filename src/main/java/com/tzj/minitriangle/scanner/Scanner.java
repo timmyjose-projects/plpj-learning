@@ -6,14 +6,18 @@ import java.util.ArrayList;
 import com.tzj.minitriangle.errors.ScannerException;
 
 public class Scanner {
+  private String filename;
   private Tokenizer tokenizer;
   private Char currentChar;
   private StringBuffer currentSpelling;
+  private int currentLine;
+  private int currentColumn;
 
   private List<Token> tokens;
   private int index = 0;
 
   public Scanner(String filename) {
+    this.filename = filename;
     this.tokenizer = new Tokenizer(filename);
     this.tokens = new ArrayList<>();
     this.scan();
@@ -31,11 +35,14 @@ public class Scanner {
       currentSpelling = new StringBuffer();
       final Token.Kind currentKind = scanToken();
 
-      tokens.add(new Token(currentSpelling.toString(), currentKind));
+      tokens.add(new Token(currentSpelling.toString(), currentKind, currentLine, currentColumn, filename));
     }
   }
 
   private Token.Kind scanToken() {
+    currentLine = currentChar.line;
+    currentColumn = currentChar.column;
+
     switch (currentChar.c) {
       case 'a':
       case 'b':

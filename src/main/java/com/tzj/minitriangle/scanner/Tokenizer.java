@@ -1,4 +1,4 @@
-package com.tzj.scanner;
+package com.tzj.minitriangle.scanner;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import com.tzj.errors.TokenizerException;
+import com.tzj.minitriangle.errors.TokenizerException;
 
 public class Tokenizer {
   private List<Char> characters;

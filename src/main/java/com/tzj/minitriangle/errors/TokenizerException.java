@@ -1,4 +1,4 @@
-package com.tzj.errors;
+package com.tzj.minitriangle.errors;
 
 public class TokenizerException extends RuntimeException {
   public TokenizerException(final String message) {

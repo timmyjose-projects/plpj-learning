@@ -1,9 +1,9 @@
-package com.tzj.scanner;
+package com.tzj.minitriangle.scanner;
 
 import java.util.List;
 import java.util.ArrayList;
 
-import com.tzj.errors.ScannerException;
+import com.tzj.minitriangle.errors.ScannerException;
 
 public class Scanner {
   private Tokenizer tokenizer;

@@ -1,4 +1,4 @@
-package com.tzj.errors;
+package com.tzj.minitriangle.errors;
 
 public class ScannerException extends RuntimeException {
   public ScannerException(final String message) {

@@ -1,4 +1,4 @@
-package com.tzj.scanner;
+package com.tzj.minitriangle.scanner;
 
 import org.junit.Test;
 

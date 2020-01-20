@@ -1,4 +1,4 @@
-package com.tzj.scanner;
+package com.tzj.minitriangle.scanner;
 
 import java.util.Map;
 import java.util.HashMap;

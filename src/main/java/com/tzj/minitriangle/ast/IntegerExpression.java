@@ -6,4 +6,9 @@ public class IntegerExpression extends Expression {
   public IntegerExpression(final IntegerLiteral I) {
     this.I = I;
   }
+
+  @Override
+  public String toString() {
+    return "IntegerExpression { I = " + I + " }";
+  }
 }

@@ -6,4 +6,9 @@ public class VnameExpression extends Expression {
   public VnameExpression(final Identifier I) {
     this.I = I;
   }
+
+  @Override
+  public String toString() {
+    return "VnameExpression { I = " + I + " }";
+  }
 }

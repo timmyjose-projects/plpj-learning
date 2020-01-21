@@ -25,9 +25,10 @@ public class Scanner {
 
   // scanning starts here
   private void scan() {
-    while (tokenizer.hasMoreChars()) {
-      currentChar = tokenizer.nextChar();
+    // start off with the first character in the stream
+    currentChar = tokenizer.nextChar();
 
+    while (tokenizer.hasMoreChars()) {
       while (currentChar.c == '!' || currentChar.c == ' ' || currentChar.c == '\n') {
         scanSeparator();
       }
@@ -206,7 +207,7 @@ public class Scanner {
   }
 
   private boolean isLetter(final Char c) {
-    return Character.isLetterOrDigit(c.c);
+    return Character.isLetter(c.c);
   }
 
   private boolean isDigit(final Char c) {
@@ -231,6 +232,8 @@ public class Scanner {
             currentChar.column, 
             expectedChar, currentChar));
     }
+
+    currentChar = tokenizer.nextChar();
   }
 
   private void takeIt() {

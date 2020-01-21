@@ -8,4 +8,9 @@ public class CallCommand extends Command {
     this.I = I;
     this.E = E;
   }
+
+  @Override
+  public String toString() {
+    return "CallCommand { I = " + I + ", E = " + " }";
+  }
 }

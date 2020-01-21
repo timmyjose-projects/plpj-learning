@@ -38,6 +38,7 @@ public class Parser {
           switch (currentToken.kind) {
             case BECOMES: 
               {
+                acceptIt();
                 final Expression eAST = parseExpression();
                 cmdAST = new AssignCommand(new SimpleVname(idAST), eAST);
               }
@@ -311,6 +312,10 @@ public class Parser {
             currentToken.column, 
             expectedTokenKind, 
             currentToken.kind));
+    }
+
+    if (currentToken.kind == Token.Kind.EOT) {
+      return;
     }
 
     currentToken = scanner.nextToken();

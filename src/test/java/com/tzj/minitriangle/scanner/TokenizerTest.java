@@ -2,7 +2,6 @@ package com.tzj.minitriangle.scanner;
 
 import java.util.List;
 import org.junit.Test;
-import org.junit.Ignore;
 
 public class TokenizerTest {
   @Test
@@ -15,7 +14,6 @@ public class TokenizerTest {
     }
   }
 
-  @Ignore
   @Test
   public void intermediateTokenizerTest() {
     final String filename = "samples/intermediate.triangle";

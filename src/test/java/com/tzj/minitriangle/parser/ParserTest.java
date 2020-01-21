@@ -15,4 +15,13 @@ public class ParserTest {
     final AST ast = parser.parse();
     System.out.println(ast);
   }
+
+  @Test
+  public void intermediateParserTest() {
+    final String filename = "samples/intermediate.triangle";
+    final Parser parser = new Parser(filename);
+
+    final AST ast = parser.parse();
+    System.out.println(ast);
+  }
 }

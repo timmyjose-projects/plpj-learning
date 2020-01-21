@@ -8,4 +8,9 @@ public class WhileCommand extends Command {
     this.E = E;
     this.C = C;
   }
+
+  @Override
+  public String toString() {
+    return "WhileComamnd { E = " + E + ", C = " + C + " }";
+  }
 }

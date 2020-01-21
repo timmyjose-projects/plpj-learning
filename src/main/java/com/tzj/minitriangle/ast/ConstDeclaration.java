@@ -8,4 +8,9 @@ public class ConstDeclaration extends Declaration {
     this.I = I;
     this.E = E;
   }
+
+  @Override
+  public String toString() {
+    return "ConstDeclaration { I = " + I + ", E = " + E + " }";
+  }
 }

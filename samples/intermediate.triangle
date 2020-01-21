@@ -1,0 +1,14 @@
+! This is an intermediate program in Mini-Triangle
+let 
+  var x : Integer;
+  var y : Integer;
+  const n ~ 100
+in
+  begin
+    x := n * n;
+    begin
+      y := n * n * n;
+      x := x + y
+    end;
+    y := x * x
+   end

@@ -6,4 +6,9 @@ public class SimpleTypeDenoter extends TypeDenoter {
   public SimpleTypeDenoter(final Identifier I) {
     this.I = I;
   }
+
+  @Override
+  public String toString() {
+    return "SimpleTypeDenoter { I = " + I + " }";
+  }
 }

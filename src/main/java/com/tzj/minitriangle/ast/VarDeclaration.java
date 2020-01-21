@@ -8,4 +8,9 @@ public class VarDeclaration extends Declaration {
     this.I = I;
     this.T = T;
   }
+
+  @Override
+  public String toString() {
+    return "VarDeclaration { I = " + I + ", T = " + T + " }";
+  }
 }

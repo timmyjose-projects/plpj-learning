@@ -10,4 +10,9 @@ public class BinaryExpression extends Expression {
     this.O = O;
     this.E2 = E2;
   }
+
+  @Override
+  public String toString() {
+    return "BinaryExpression { E1 = " + E1 + ", O = " + O + ", E2 = " + E2 + " }";
+  }
 }

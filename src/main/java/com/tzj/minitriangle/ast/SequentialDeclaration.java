@@ -8,4 +8,9 @@ public class SequentialDeclaration extends Declaration {
     this.D1 = D1;
     this.D2 = D2;
   }
+
+  @Override
+  public String toString() {
+    return "SequentialDeclaration { D1 = " + D1 + ", D2 = " + D2 + " }";
+  }
 }

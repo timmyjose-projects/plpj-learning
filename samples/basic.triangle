@@ -4,6 +4,6 @@ let
   var m : Integer
 in
   begin
-    m := n * n
+    m := n * n;
     m := m - 100
   end

@@ -8,4 +8,9 @@ public class LetCommand extends Command {
     this.D = D;
     this.C = C;
   }
+
+  @Override
+  public String toString() {
+    return "LetCommand { D = " + D + ", C = " + C + " }";
+  }
 }

@@ -8,4 +8,9 @@ public class SequentialCommand extends Command {
     this.C1 = C1;
     this.C2 = C2;
   }
+
+  @Override
+  public String toString() {
+    return "SequentialCommand { C1 = " + C1 + ", C2 = " + C2 + " }";
+  }
 }

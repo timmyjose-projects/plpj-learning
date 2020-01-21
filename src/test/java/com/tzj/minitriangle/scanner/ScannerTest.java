@@ -12,4 +12,14 @@ public class ScannerTest {
       System.out.println(scanner.nextToken());
     }
   }
+
+  @Test
+  public void intermediateScannerTest() {
+    String filename = "samples/intermediate.triangle";
+    final Scanner scanner = new Scanner(filename);
+
+    while (scanner.hasMoreTokens()) {
+      System.out.println(scanner.nextToken());
+    }
+  }
 }

@@ -6,4 +6,9 @@ public class Program extends AST {
   public Program(final Command C) {
     this.C = C;
   }
+
+  @Override
+  public String toString() {
+    return "Program { C = " + C + " }";
+  }
 }

@@ -8,4 +8,9 @@ public class AssignCommand extends Command {
     this.V = V;
     this.E = E;
   }
+
+  @Override
+  public String toString() {
+    return "AssignCommand { V = " + V + ", E = " + E + " }";
+  }
 }

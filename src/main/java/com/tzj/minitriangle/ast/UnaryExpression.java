@@ -8,4 +8,9 @@ public class UnaryExpression extends Expression {
     this.O = O;
     this.E = E;
   }
+
+  @Override
+  public String toString() {
+    return "UnaryExpression { O = " + O + ", E = " + " }";
+  }
 }
